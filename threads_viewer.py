@@ -9,7 +9,7 @@ import linecache
 
 from threading import Thread
 
-channel_url = ""
+channel_url = "https://www.twitch.tv/mdc1107"
 proxies_file = "Proxies_txt/good_proxy.txt"
 processes = []
 max_nb_of_threads = 1000
@@ -19,7 +19,7 @@ nb_of_proxies = 0
 
 # Session creating for request
 ua = UserAgent()
-session = Livestreamer()
+session = Livestreamer(mdc1107)
 session.set_option("http-headers", {'User-Agent': ua.random, "Client-ID": "ewvlchtxgqq88ru9gmfp1gmyt6h2b93"})
 
 
